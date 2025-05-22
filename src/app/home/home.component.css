@@ -1,0 +1,31 @@
+.card {
+  transition: box-shadow 0.3s ease-in-out;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-body, .list-group {
+  overflow-y: auto;
+  max-height: calc(100vh - 220px);
+}
+
+.btn {
+  transition: background-color 0.2s ease-in-out, transform 0.1s;
+}
+
+.btn:hover {
+  transform: scale(1.02);
+}
+
+.list-group-item {
+  color: #000; 
+  font-weight: 500;
+}
+.list-group-item.active {
+  background-color: #0d6dfdb9;
+  color: white;
+}

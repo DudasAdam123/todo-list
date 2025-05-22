@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "name": "Otthon"
+  },
+  {
+    "id": "2",
+    "name": "Munka"
+  },
+  {
+    "id": "3",
+    "name": "Sport"
+  },
+  {
+    "id": "4",
+    "name": "Produktivitás"
+  },
+  {
+    "id": "5",
+    "name": "Egyéb"
+  }
+
+]

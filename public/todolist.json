@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "title": "Bevásárlás",
+    "category": "1",
+    "status": "finished",
+    "ToBeCompleted": "2025-05-20T17:30:00.000Z",
+    "priority": "medium" 
+  },
+  {
+    "id": "2",
+    "title": "Dokumentum fénymásolása a főnöknek",
+    "category": "2",
+    "status": "active",
+    "ToBeCompleted": "2024-05-21T09:00:00.000Z",
+    "priority": "urgent" 
+  },
+  {
+    "id": "3",
+    "title": "100 húzódzkodás, 100 fekvőtámasz, 10 kilóméter futás",
+    "category": "3",
+    "status": "finished",
+    "ToBeCompleted": "2024-05-21T18:15:00.000Z",
+    "priority": "low" 
+  },
+  {
+    "id": "4",
+    "title": "Írás",
+    "category": "4",
+    "status": "active",
+    "ToBeCompleted": "2024-05-20T21:00:00.000Z",
+    "priority": "medium" 
+  },
+  {
+    "id": "5",
+    "title": "Kutyaház összerakása",
+    "category": "1",
+    "status": "active",
+    "ToBeCompleted": "2024-05-24T12:00:00.000Z",
+    "priority": "low" 
+  }
+]

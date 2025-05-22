@@ -1,0 +1,43 @@
+<div class="todoForms p-4 shadow bg-white rounded">
+  <h2 class="mb-4">{{ isEdit ? 'Teendő szerkesztése' : 'Új Teendő' }}</h2>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label class="form-label">Teendő neve</label>
+      <input type="text" formControlName="title" class="form-control" required>
+    </div>
+
+<select formControlName="category" class="form-select">
+  <option value="">-- Válassz kategóriát --</option>
+  <option *ngFor="let cat of categories" [value]="cat.id">{{ cat.name }}</option>
+</select>
+
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label class="form-label">Állapot</label>
+        <select formControlName="status" class="form-select">
+          <option value="active">Aktív</option>
+          <option value="finished">Befejezve</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">Prioritás</label>
+        <select formControlName="priority" class="form-select">
+          <option value="low">Alacsony</option>
+          <option value="medium">Közepes</option>
+          <option value="urgent">Magas</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Befejezési dátum</label>
+      <input type="date" formControlName="ToBeCompleted" class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-success me-2" [disabled]="form.invalid">
+      {{ isEdit ? 'Mentés' : 'Hozzáadás' }}
+    </button>
+    <button type="button" class="btn btn-secondary" (click)="router.navigate(['/'])">Mégse</button>
+  </form>
+</div>
